@@ -1,0 +1,168 @@
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: rgba(127, 131, 137, 0.61);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.container {
+  margin-top: 50px;
+  width: 400px;
+  height: 80vh;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--shadow-dark);
+  align-items: center;
+  background-size: cover; /* Resimlerin tüm alanı kaplaması için */
+  transition: background-image 0.5s ease-in-out, color 0.5s ease-in-out;
+
+}
+
+/* Gün modu için */
+.day {
+  background-image: url("/assets/alt.jpg");
+}
+
+/* Gece modu için */
+.night {
+  background-image: url("/assets/altnight.jpg");
+}
+/* Gece modundaki yazıların beyaz olması için */
+.night .more-info-label,
+.night .info-block-value,
+.night .info-block-label span {
+  color: white;
+}
+.day .more-info-label,
+.day .info-block-value,
+.day .info-block-label span,
+.day .location,
+.day .temperature,
+.day .condition-text
+
+{
+  color: rgba(0,0,0,0.86);
+}
+
+
+.up {
+
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.weather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temperature {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.condition-text {
+  color: white;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.message {
+  color: white;
+  font-size: 1em;
+  left: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.more-info-label {
+  color: black;
+
+}
+
+.more-info-container {
+  background-color: var(--shadow-light);
+  border-radius: 20px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50%;
+}
+
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block-label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block-label img {
+  width: 2em;
+}
+
+.info-block-label span {
+  color: black;
+  font-size: 0.8em;
+}
+
+.info-block-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+}
+
+.down {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}

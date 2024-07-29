@@ -1,0 +1,64 @@
+<div class="container-search" [formGroup]="searchForm">
+  <div class="search">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Search City"
+      formControlName="city"
+    />
+    <button class="search-button" (click)="searchWeather()">Search</button>
+  </div>
+</div>
+
+<!-- isDayTime değişkenine göre sınıf ekleniyor -->
+<div class="container" [ngClass]="isDayTime ? 'day' : 'night'">
+  <div class="up">
+
+    <div class="weather-data">
+      <div class="location">{{ weather?.location?.name }}</div>
+      <div class="temperature">{{ weather?.current?.temp_c }}°C</div>
+
+      <div class="condition-text">{{ weather?.current?.condition?.text }}</div>
+    </div>
+  </div>
+
+  <div class="down">
+    <div class="more-info-label">More Information</div>
+
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="/assets/uvicon.png" alt="UV Index" />
+          <span>uv</span>
+        </div>
+        <div class="info-block-value">{{ weather?.current?.uv }}</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="/assets/feelslike.png" alt="Feels Like" />
+          <span>feels like</span>
+        </div>
+        <div class="info-block-value">
+          {{ weather?.current?.feelslike_c }}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="/assets/humidity.png" alt="Humidity" />
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">{{ weather?.current?.humidity }}%</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="/assets/wind.png" alt="Wind Speed" />
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">{{ weather?.current?.wind_kph }} km/h</div>
+      </div>
+    </div>
+  </div>
+</div>
