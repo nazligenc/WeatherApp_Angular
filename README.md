@@ -1,27 +1,44 @@
-# WeatherAngular
+# Weather Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
-## Development server
+This project is an Angular-based weather application that includes functionalities such as temperature, UV index, wind speed, feels like temperature, and humidity.This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features:
+- In the entered city, day and night themes according to the local time
+- Temperature and weather description.
+- It includes UV index, wind speed, humidity, and feels like temperature.
 
-## Code scaffolding
+## Installation
+1. Clone the repository:
+   ```bash
+    git clone https://github.com/username/repository-name.git
+   
+2. Navigate to the project directory:
+   ```bash
+     cd repository-name
+3. Install the dependencies:
+    ```bash
+     npm install
+4. Run the application
+   ```bash
+     ng serve
+6. Open your browser and go to:
+   ```bash
+    http://localhost:4200
+ ## Usage
+Open the application in your browser and view the current weather conditions, including temperature, UV index, wind speed, humidity, and feels like temperature.
+## Screenshots
+![image](https://github.com/user-attachments/assets/3708a913-1243-4459-9717-921194071db2)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Contributing
+Contributions are greatly appreciated! If you encounter any issues or have ideas for enhancements, feel free to open an issue or create a pull request.
+This project is licensed under the MIT License.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Credits
+The Weather App is created and maintained by Nazlı Genç.
 
-## Running unit tests
+## Contact
+For any inquiries or questions, please contact nazli.gencx@gmail.com.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+"You're welcome to explore the project and make use of the Weather App!"
