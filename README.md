@@ -19,7 +19,7 @@ This project is an Angular-based weather application that includes functionaliti
 3. Install the dependencies:
     ```bash
      npm install
-4. Run the application
+4. Run the application:
    ```bash
      ng serve
 6. Open your browser and go to:
